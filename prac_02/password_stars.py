@@ -4,6 +4,7 @@ def main():
 
 
 def print_password(password):
+    print("PW: ", end='')
     for i in range(len(password)):
         print("*", end='')
     print()
@@ -11,7 +12,6 @@ def print_password(password):
 
 def get_password():
     password = input("PW: ")
-    print("PW: ", end='')
     return password
 
 
