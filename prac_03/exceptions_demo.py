@@ -2,6 +2,7 @@
 CP1404/CP5632 - Practical
 Answer the following questions:
 1. When will a ValueError occur?
+When input invalid literal for int().
 2. When will a ZeroDivisionError occur?
 3. Could you change the code to avoid the possibility of a ZeroDivisionError?
 """
