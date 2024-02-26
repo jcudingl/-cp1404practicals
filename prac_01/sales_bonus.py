@@ -8,9 +8,10 @@ If sales are $1,000 or over, the bonus is 15%.
 sales = float(input("Enter sales: $"))
 while sales >= 0:
     if sales >= 1000:
-        bonus = sales * 0.15
+        bonus_rate = 0.15
     else:
-        bonus = sales * 0.10
+        bonus_rate = 0.10
+    bonus = sales * bonus_rate
     print(f"Bonus: ${bonus}")
     sales = float(input("Enter sales: $"))
 print("Finished.")
