@@ -23,4 +23,4 @@ print(random.uniform(2.5, 5.5))  # line 3
 # The smallest number could have seen is 2.5, largest is close to, but not exactly, 5.5.
 
 # Write code, not a comment, to produce a random number between 1 and 100 inclusive.
-random.randint(1, 100)
+
