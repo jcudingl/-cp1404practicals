@@ -1,6 +1,4 @@
-numbers = []
-for number in range(5):
-    numbers.append(int(input("Number: ")))
+numbers = [int(input("Number: ")) for number in range(5)]
 print(f"The first number is {numbers[0]}")
 print(f"The last number is {numbers[-1]}")
 print(f"The smallest number is {min(numbers)}")
