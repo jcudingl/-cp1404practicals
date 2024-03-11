@@ -9,6 +9,5 @@ number_of_quick_pick = int(input("How many quick picks? "))
 for line in range(number_of_quick_pick):
     random.shuffle(numbers)
     quick_pick = sorted(numbers[:NUMBER_IN_A_LINE])
-    for number in quick_pick:
-        print(f"{number:2} ", end="")
+    print("".join(f"{number:2} " for number in quick_pick))
     print()
