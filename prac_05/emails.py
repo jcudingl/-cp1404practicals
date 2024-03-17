@@ -1,7 +1,7 @@
 """
 Emails
 Estimate: 10 minutes
-Actual:
+Actual:   14 minutes
 """
 email_dictionary = {}
 email = input("Email: ")
