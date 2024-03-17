@@ -6,7 +6,7 @@ Actual:   14 minutes
 email_dictionary = {}
 email = input("Email: ")
 while email != "":
-    name = "".join(word.capitalize() for word in email.split("@")[0].split("."))
+    name = " ".join(word.capitalize() for word in email.split("@")[0].split("."))
     check = input(f"Is your name {name}? (Y/n)")
     if check == "Y" or check == "":
         email_dictionary[name] = email
@@ -14,5 +14,5 @@ while email != "":
         name = input("Name: ")
         email_dictionary[name] = email
     email = input("Email: ")
-for name in email_dictionary:
-    print(f"{name}({email_dictionary[name]})")
+for name, email in email_dictionary.items():
+    print(f"{name}({email})")
