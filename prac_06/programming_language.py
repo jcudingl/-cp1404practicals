@@ -15,7 +15,10 @@ class ProgrammingLanguage:
         self.year = year
 
     def __str__(self):
-        """Return a string."""
+        """Return a string.
+
+        :return: f'{self.name}, {self.type} Typing, Reflection={self.reflection}, First appeared in {self.year}'
+        """
         return f"{self.name}, {self.type} Typing, Reflection={self.reflection}, First appeared in {self.year}"
 
     def is_dynamic(self):
