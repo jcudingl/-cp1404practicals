@@ -18,3 +18,17 @@ class Guitar:
         :return: f'{self.name} ({self.year}) : ${self.cost}'
         """
         return f'{self.name} ({self.year}) : ${self.cost}'
+
+    def get_age(self):
+        """Get the age of guitar.
+
+        :return:age of guitar
+        """
+        return 2024 - self.year
+
+    def is_vintage(self):
+        """guitar is 50 or more years old, or not
+
+        :return:boolean of guitar is 50 or more years old, or not
+        """
+        return self.get_age() >= 50
